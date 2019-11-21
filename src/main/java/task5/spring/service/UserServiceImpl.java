@@ -20,26 +20,31 @@ import java.util.Set;
 @Transactional
 public class UserServiceImpl implements UserService {
 
+    @Autowired
     private UserDao userDao;
+
+    @Autowired
     private RoleDao roleDao;
 
-   @Autowired
+//   @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 
 
 
-    @Autowired
-    public UserServiceImpl(UserDao userDao) {
-        this.userDao = userDao;
-    }
-
 //    @Autowired
-//    public UserServiceImpl(UserDao userDao, RoleDao roleDao  , BCryptPasswordEncoder bCryptPasswordEncoder) {
+//    public UserServiceImpl(UserDao userDao) {
 //        this.userDao = userDao;
-//        this.roleDao = roleDao;
-//        this.bCryptPasswordEncoder = bCryptPasswordEncoder;
 //    }
+
+/*
+    @Autowired
+    public UserServiceImpl(UserDao userDao , RoleDao roleDao   , BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.userDao = userDao;
+        this.roleDao = roleDao;
+//      //  this.bCryptPasswordEncoder = bCryptPasswordEncoder;
+    }
+*/
 
     @Deprecated
     //setter - deprecated

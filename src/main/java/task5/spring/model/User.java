@@ -53,7 +53,6 @@ public class User {
 
 
     public User() {
-
     }
 
     public User(String name, String login, String password, String role) {
